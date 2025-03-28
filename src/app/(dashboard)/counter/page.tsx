@@ -1,9 +1,13 @@
 import { Counter } from "@/components/Counter";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "CastDev-j | Contador",
+  description: "CastDev-j | Contador",
+};
 
-export const CounterPage = () => {
+export const counterPage = () => {
   return (
     <>
       <section className="flex flex-col gap-4">
@@ -17,4 +21,4 @@ export const CounterPage = () => {
   );
 };
 
-export default CounterPage;
+export default counterPage;
