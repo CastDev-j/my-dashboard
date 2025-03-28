@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { ImFileEmpty } from "react-icons/im";
 import { IoHomeOutline } from "react-icons/io5";
 import { SlCalculator } from "react-icons/sl";
 
@@ -22,24 +23,24 @@ const routes: Route[] = [
     Icon: SlCalculator,
     description: "Página para realizar cálculos o contar",
   },
-  // {
-  //   path: "/#example1",
-  //   name: "Example",
-  //   Icon: ImFileEmpty,
-  //   description: "Ejemplo de página número 1",
-  // },
-  // {
-  //   path: "/#example2",
-  //   name: "Example",
-  //   Icon: ImFileEmpty,
-  //   description: "Ejemplo de página número 2",
-  // },
-  // {
-  //   path: "/#example3",
-  //   name: "Example",
-  //   Icon: ImFileEmpty,
-  //   description: "Ejemplo de página número 3",
-  // },
+  {
+    path: "/#example1",
+    name: "Example",
+    Icon: ImFileEmpty,
+    description: "Ejemplo de página número 1",
+  },
+  {
+    path: "/#example2",
+    name: "Example",
+    Icon: ImFileEmpty,
+    description: "Ejemplo de página número 2",
+  },
+  {
+    path: "/#example3",
+    name: "Example",
+    Icon: ImFileEmpty,
+    description: "Ejemplo de página número 3",
+  },
 ];
 
 export default routes;
