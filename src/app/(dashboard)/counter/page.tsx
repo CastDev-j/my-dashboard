@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "CastDev-j | Contador",
 };
 
-export const CounterPage = () => {
+export default function CounterPage() {
   return (
     <>
       <section className="flex flex-col gap-4">
@@ -15,10 +15,8 @@ export const CounterPage = () => {
           <h1 className="text-center text-2xl text-neutral-900">Contador</h1>
         </div>
 
-        <Counter initialValue={0}/>
+        <Counter initialValue={0} />
       </section>
     </>
   );
-};
-
-export default CounterPage;
+}

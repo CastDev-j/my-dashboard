@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HomePage = () => {
+export default function HomePage() {
   return (
     <>
       <div className="p-4 border-2 border-neutral-300 border-dashed rounded-lg">
@@ -8,6 +8,4 @@ export const HomePage = () => {
       </div>
     </>
   );
-};
-
-export default HomePage;
+}
