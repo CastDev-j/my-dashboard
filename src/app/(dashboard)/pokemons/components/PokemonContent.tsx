@@ -18,13 +18,19 @@ export const PokemonContent: FC<PokemonContentProps> = async ({ id }) => {
         {/* Image Section */}
         <div className="col-span-2 flex justify-center items-center">
           <Image
-            className="h-48 w-48 object-cover rounded-lg"
-            src={sprites.front_default}
+            src={
+              sprites.other?.["official-artwork"]?.front_default ??
+              sprites.front_default
+            }
             alt={name}
             width={200}
             height={200}
-            priority={true}
             unoptimized
+            priority={true}
+            style={{
+              width: "200px",
+              height: "auto",
+            }}
           />
         </div>
 

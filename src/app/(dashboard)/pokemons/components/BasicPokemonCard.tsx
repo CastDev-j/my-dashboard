@@ -26,6 +26,7 @@ export const BasicPokemonCard: FC<BasicPokemonCardProps> = ({ id, name }) => {
             width={48}
             height={48}
             unoptimized
+            priority={true}
             style={{
               width: "48px",
               height: "auto",
@@ -39,8 +40,12 @@ export const BasicPokemonCard: FC<BasicPokemonCardProps> = ({ id, name }) => {
         alt={name}
         width={96}
         height={96}
-        priority={false}
+        priority={true}
         unoptimized
+        style={{
+          width: "96px",
+          height: "auto",
+        }}
       />
 
       <div className="flex justify-center items-center text-lg w-full">
