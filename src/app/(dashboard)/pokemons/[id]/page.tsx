@@ -3,9 +3,13 @@ import { PokemonContent } from "../components/PokemonContent";
 import { getPokemon } from "../helpers/getPokemon";
 import Link from "next/link";
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   try {
-    const { id } = params;
+    const { id } = await params;
     const { pokemonDetails } = await getPokemon(Number(id));
 
     return {
@@ -22,8 +26,12 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   }
 }
 
-export default function PokemonPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+export default async function PokemonPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
 
   return (
     <>
