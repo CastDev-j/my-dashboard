@@ -11,7 +11,7 @@ interface Props {
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   try {
-    const { id } = await params;
+    const { id } = params;
     const { pokemonDetails } = await getPokemon(Number(id));
 
     return {
@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   }
 }
 
-export default async function PokemonPage({ params }: Props) {
-  const { id } = await params;
+export default function PokemonPage({ params }: Props) {
+  const { id } = params;
 
   return (
     <>

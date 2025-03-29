@@ -1,0 +1,65 @@
+[33mcommit 6be39d84cca678a42607f92d7d57298e018cdda5[m[33m ([m[1;36mHEAD -> [m[1;32mmaincat[m[33m, [m[1;31morigin/maincat[m[33m)[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Sat Mar 29 12:45:01 2025 -0600
+
+    Add Pokémon interfaces, services, and components; update layout and styles
+
+[33mcommit 48389f7fd6cb059b71e6dde2ca86a71c17101604[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:18:16 2025 -0600
+
+    Add example routes with ImFileEmpty icon to routes.ts
+
+[33mcommit 8bae9e99c97437c36509fa5ea9ee412dfac8813c[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:15:18 2025 -0600
+
+    Refactor CounterPage and HomePage components to use default function exports for consistency
+
+[33mcommit edbc7619bbf069994687b02d547b2be2cdc2b767[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:11:18 2025 -0600
+
+    Rename components for consistency: counterPage to CounterPage and homePage to HomePage
+
+[33mcommit f96d9b74dc35bc955c07a5de1dcb253b6dba2888[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:11:13 2025 -0600
+
+    Remove outdated README content
+
+[33mcommit ce4d317b9335ca3c53d53a361c8140e2830d2fc4[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:06:37 2025 -0600
+
+    Refactor component names for consistency: CounterPage to counterPage and HomePage to homePage; add metadata for CounterPage
+
+[33mcommit eb7bd01c7b3d907ab5d23b7a68c013b9683c1481[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:03:35 2025 -0600
+
+    Remove unused metadata from CounterPage component
+
+[33mcommit e68b7ef5be5be175c81c1f3124f00d0ae28b1b19[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 21:02:29 2025 -0600
+
+    Remove unused example routes
+
+[33mcommit dd164b0ba75b9d272ce8f568e63bd62c0c474fe8[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 20:59:06 2025 -0600
+
+    Rename components for clarity: Home to HomePage and Home to CounterPage
+
+[33mcommit 794e0630fd9990e46efd42b88db4b25fff61112d[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 20:54:46 2025 -0600
+
+    Implement sidebar navigation and counter component; update layout and styles
+
+[33mcommit 885612aaa71ca31f8cfaf3d843fca05f91812889[m
+Author: AndDev <23031429@itcelaya.edu.mx>
+Date:   Thu Mar 27 18:45:39 2025 -0600
+
+    Initial commit from Create Next App
