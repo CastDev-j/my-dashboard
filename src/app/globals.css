@@ -1,2 +1,7 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
 
+
+body::-webkit-scrollbar{
+    display: none;
+}

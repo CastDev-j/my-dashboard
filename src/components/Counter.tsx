@@ -31,19 +31,19 @@ const CounterComponent: FC<CounterProps> = ({ initialValue = 0 }) => {
       <div className="flex space-x-4">
         <button
           onClick={increment}
-          className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transform transition-transform duration-300 hover:scale-105"
+          className="px-4 py-2 bg-neutral-800 text-white font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-600 focus:ring-opacity-75 transform transition-transform duration-300 hover:scale-105"
         >
           Increment
         </button>
         <button
           onClick={decrement}
-          className="px-4 py-2 bg-blue-100 text-blue-600 font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-opacity-75 transform transition-transform duration-300 hover:scale-105"
+          className="px-4 py-2 bg-neutral-100 text-neutral-600 font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-200 focus:ring-opacity-75 transform transition-transform duration-300 hover:scale-105"
         >
           Decrement
         </button>
         <button
           onClick={reset}
-          className="px-4 py-2 bg-white text-blue-900 font-semibold border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-100 focus:ring-opacity-75 transform transition-transform duration-300 hover:scale-105"
+          className="px-4 py-2 bg-white text-neutral-900 font-semibold border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-100 focus:ring-opacity-75 transform transition-transform duration-300 hover:scale-105"
         >
           Reset
         </button>

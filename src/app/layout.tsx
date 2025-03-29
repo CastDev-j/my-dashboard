@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CastDev-j | Inicio",
-  description: "CastDev-j | Inicio",
+  title: "CastDev-j",
+  description: "CastDev-j",
 };
 
 export default function RootLayout({

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CounterPage() {
   return (
     <>
-      <section className="flex flex-col gap-4">
+      <section className="flex flex-col gap-4 animate-fade animate-duration-300 animate-ease-in">
         <div className="p-4 border-2 border-neutral-300 border-dashed rounded-lg">
           <h1 className="text-center text-2xl text-neutral-900">Contador</h1>
         </div>

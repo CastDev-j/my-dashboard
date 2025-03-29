@@ -2,6 +2,7 @@ import { IconType } from "react-icons";
 import { ImFileEmpty } from "react-icons/im";
 import { IoHomeOutline } from "react-icons/io5";
 import { SlCalculator } from "react-icons/sl";
+import { TbPokeball } from "react-icons/tb";
 
 interface Route {
   path: string;
@@ -24,13 +25,13 @@ const routes: Route[] = [
     description: "Página para realizar cálculos o contar",
   },
   {
-    path: "/#example1",
-    name: "Example",
-    Icon: ImFileEmpty,
-    description: "Ejemplo de página número 1",
+    path: "/pokemons",
+    name: "Pokemones",
+    Icon: TbPokeball,
+    description: "Página para ver pokemons",
   },
   {
-    path: "/#example2",
+    path: "#example2",
     name: "Example",
     Icon: ImFileEmpty,
     description: "Ejemplo de página número 2",

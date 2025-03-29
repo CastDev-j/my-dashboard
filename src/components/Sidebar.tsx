@@ -30,6 +30,7 @@ export const Sidebar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isOpen, toggleSidebar]);
 
+
   return (
     <>
       <div className="flex items-center justify-between p-2 py-3 border-b-2 border-neutral-200 md:hidden w-full">
@@ -44,11 +45,13 @@ export const Sidebar = () => {
         </button>
       </div>
 
+      <div className="md:w-64 md:h-screen md:relative"></div>
+
       <aside
         id="default-sidebar"
         className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform bg-neutral-50 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:relative md:translate-x-0`}
+        } md:translate-x-0 md:fixed`}
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-2 overflow-y-auto">
@@ -63,7 +66,7 @@ export const Sidebar = () => {
               <FiX className="w-6 h-6" aria-hidden="true" />
             </button>
             <strong className="text-neutral-700 text-sm ms-3">
-              Hecho por <span className="text-blue-500">CastDev-j</span>
+              Hecho por <span className="text-indigo-500">CastDev-j</span>
             </strong>
           </div>
           <ul className="space-y-2 font-medium mt-4">
@@ -76,7 +79,9 @@ export const Sidebar = () => {
                 >
                   <div
                     className={`flex items-center ${
-                      pathname === path ? "text-blue-600" : ""
+                      pathname.split("/").slice(0, 2).join("/") === path
+                        ? "text-indigo-600"
+                        : ""
                     }`}
                   >
                     <Icon
