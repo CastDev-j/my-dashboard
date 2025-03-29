@@ -3,12 +3,6 @@ import { PokemonContent } from "../components/PokemonContent";
 import { getPokemon } from "../helpers/getPokemon";
 import Link from "next/link";
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
-
 export async function generateMetadata({ params }: { params: { id: string } }) {
   try {
     const { id } = params;
@@ -28,7 +22,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   }
 }
 
-export default function PokemonPage({ params }: Props) {
+export default function PokemonPage({ params }: { params: { id: string } }) {
   const { id } = params;
 
   return (
