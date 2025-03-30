@@ -2,6 +2,19 @@ import React from "react";
 import { PokemonContent } from "../components/PokemonContent";
 import { getPokemon } from "../helpers/getPokemon";
 import Link from "next/link";
+import { getPokemons } from "../helpers/getPokemons";
+
+//! esto se ejecuta en build time para generar las rutas estaticas
+export async function generateStaticParams() {
+  const finalArray = await getPokemons(151, 0).then((res) => {
+    const idByName = res.map((pokemon) => ({ id: pokemon.name }));
+    const idById = res.map((pokemon) => ({ id: pokemon.id.toString() }));
+
+    return [...idByName, ...idById];
+  });
+
+  return finalArray;
+}
 
 export async function generateMetadata({
   params,
@@ -10,7 +23,7 @@ export async function generateMetadata({
 }) {
   try {
     const { id } = await params;
-    const { pokemonDetails } = await getPokemon(Number(id));
+    const { pokemonDetails } = await getPokemon(id);
 
     return {
       title: `CastDev-J | Pokemon | ${pokemonDetails.name}`,
@@ -26,8 +39,6 @@ export async function generateMetadata({
   }
 }
 
-
-
 export default async function PokemonPage({
   params,
 }: {
@@ -42,10 +53,10 @@ export default async function PokemonPage({
           <Link href="/pokemons" className="text-indigo-500 hover:underline">
             Pokemons
           </Link>
-          <span className="text-neutral-500">/</span>
+          <span className="text-neutral-500 ">/</span>
           <Link
             href={`/pokemons/${id}`}
-            className="text-indigo-500 hover:underline"
+            className="text-indigo-500 hover:underline capitalize"
           >
             {id}
           </Link>
@@ -55,7 +66,7 @@ export default async function PokemonPage({
           <h1 className="text-center text-2xl text-neutral-900">Pokemon</h1>
         </div>
 
-        <PokemonContent id={Number(id)} />
+        <PokemonContent q={id} />
       </div>
     </>
   );

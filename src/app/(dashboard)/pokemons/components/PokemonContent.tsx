@@ -3,11 +3,13 @@ import { getPokemon } from "../helpers/getPokemon";
 import Image from "next/image";
 
 interface PokemonContentProps {
-  id: number;
+  q: string;
 }
 
-export const PokemonContent: FC<PokemonContentProps> = async ({ id }) => {
-  const { pokemonDetails } = await getPokemon(Number(id));
+export const PokemonContent: FC<PokemonContentProps> = async ({ q }) => {
+  console.log("PokemonContent", q);
+
+  const { pokemonDetails } = await getPokemon(q);
 
   const { abilities, name, sprites, height, weight, types, stats, moves } =
     pokemonDetails;
@@ -39,9 +41,6 @@ export const PokemonContent: FC<PokemonContentProps> = async ({ id }) => {
           <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
             {name}
           </div>
-          <h1 className="text-2xl font-bold text-neutral-800 mt-2">
-            Pokemon ID: {id}
-          </h1>
           <p className="text-neutral-600 mt-2">
             <strong>Height:</strong> {height} | <strong>Weight:</strong>{" "}
             {weight}

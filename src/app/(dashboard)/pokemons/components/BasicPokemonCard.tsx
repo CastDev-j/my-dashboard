@@ -14,7 +14,7 @@ export const BasicPokemonCard: FC<BasicPokemonCardProps> = ({ id, name }) => {
     <section className="flex flex-col items-center w-full min-h-40 p-4 border-2 gap-8 border-neutral-300 border-dashed rounded-lg">
       <div className="flex justify-between w-full">
         <div className="">
-          <Link href={`pokemons/${id}`} className="p-3 size-12 flex justify-center items-center rounded-lg cursor-pointer text-start text-xl bg-neutral-100 text-neutral-400 font-semibold gap-2 transition-colors hover:text-neutral-800 active:text-neutral-800">
+          <Link href={`pokemons/${name}`} className="p-3 size-12 flex justify-center items-center rounded-lg cursor-pointer text-start text-xl bg-neutral-100 text-neutral-400 font-semibold gap-2 transition-colors hover:text-neutral-800 active:text-neutral-800">
             <FaExternalLinkAlt className="" />
           </Link>
         </div>
