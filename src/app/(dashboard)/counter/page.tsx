@@ -15,7 +15,7 @@ export default function CounterPage() {
           <h1 className="text-center text-2xl text-neutral-900">Contador</h1>
         </div>
 
-        <Counter initialValue={0} />
+        <Counter />
       </section>
     </>
   );

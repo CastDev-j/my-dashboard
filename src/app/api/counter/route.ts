@@ -1,0 +1,19 @@
+import { NextResponse } from "next/server";
+
+export async function GET(request: Request) {
+  console.log("GET /api/counter/route.ts called", request.url);
+
+  return NextResponse.json({
+    method: "GET",
+    count: 100,
+  });
+}
+
+export async function POST(request: Request) {
+  console.log("POST /api/counter/route.ts called", request.url);
+
+  return NextResponse.json({
+    method: "POST",
+    count: 100 ,
+  });
+}

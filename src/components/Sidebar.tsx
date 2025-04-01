@@ -30,7 +30,6 @@ export const Sidebar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isOpen, toggleSidebar]);
 
-
   return (
     <>
       <div className="flex items-center justify-between p-2 py-3 border-b-2 border-neutral-200 md:hidden w-full">

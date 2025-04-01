@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { CiStar } from "react-icons/ci";
 import { ImFileEmpty } from "react-icons/im";
 import { IoHomeOutline } from "react-icons/io5";
 import { SlCalculator } from "react-icons/sl";
@@ -31,10 +32,10 @@ const routes: Route[] = [
     description: "Página para ver pokemons",
   },
   {
-    path: "#example2",
-    name: "Example",
-    Icon: ImFileEmpty,
-    description: "Ejemplo de página número 2",
+    path: "/favorites",
+    name: "Pokemones Favoritos",
+    Icon: CiStar,
+    description: "Página para ver pokemones favoritos",
   },
   {
     path: "/#example3",
