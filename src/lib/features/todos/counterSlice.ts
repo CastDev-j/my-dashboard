@@ -7,7 +7,7 @@ export interface CounterState {
 }
 
 const getApiCounter = async () => {
-  const data = await fetch("http://localhost:3000/api/counter", {
+  const data = await fetch("/api/counter", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
